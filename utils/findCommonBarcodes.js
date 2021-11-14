@@ -4,6 +4,6 @@ const _ = require("lodash");
 module.exports = companies => _.map(
     _.intersectionWith(
         companies.companyA.barcodes, companies.companyB.barcodes,
-        (barcodeA, barcodeB) => (barcodeA.Barcode == barcodeB.Barcode)
+        (barcodeA, barcodeB) => (barcodeA.Barcode === barcodeB.Barcode)
     ), barcodeObj => barcodeObj.Barcode
 )

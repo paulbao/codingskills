@@ -51,7 +51,7 @@ describe("mergeProducts", () => {
       },
     ];
   });
-  it("should return only compay A pruducts if all products are duplicated", () => {
+  it("should return only pruducts of company A if all products are duplicated", () => {
     const commonBarcodes = [
       "z2783613083817",
       "n7405223693844",
@@ -111,7 +111,7 @@ describe("mergeProducts", () => {
     expect(actual).toEqual(expected);
   });
 
-  it("should return both company products except those with same barcode", () => {
+  it("should merge all company products without duplicating products", () => {
     const commonBarcodes = ["z2783613083817", "n7405223693844"];
     const companyB = _.map(companyBProductsWithBarcodes, (product) => {
       if (product.SKU === "bbb-vyk-317") {

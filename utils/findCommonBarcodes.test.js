@@ -3,7 +3,7 @@ const findCommonBarcodes = require("./findCommonBarcodes");
 
 describe("findCommonBarcodes", () => {
 
-    it("should return a barcode arry that both both company have", () => {
+    it("should return a barcode arry that both companies have", () => {
         const companies = {
             companyA: {
                 barcodes: [

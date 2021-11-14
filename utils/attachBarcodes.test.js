@@ -37,7 +37,7 @@ const company = {
 
 describe("attachBarcodes", () => {
 
-    it("should return a barcode arry that both both company have", () => {
+    it("should attach a barcodes arrray that found by SKKU for each product", () => {
         const expected = [
             {
                 SKU: '999-vyk-317',
